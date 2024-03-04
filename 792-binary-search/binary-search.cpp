@@ -9,20 +9,14 @@ public:
             end=mid;
         else if(nums[mid]<target)
             start=mid;
-        
         if(end-start<=1)
         {
             if(nums[start]==target)
-            {
                 return start;
-            }
             else if(nums[end]==target)
-            {
                 return end;
-            }
             return -1;
         }
-            
         return TargetIndex(nums,start,end,target);
     }
     int search(vector<int>& nums, int target) 
