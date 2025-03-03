@@ -40,7 +40,7 @@ class Solution:
         max_sum = 0
 
         while(next_mid):
-            max_sum = max(int(next_mid.val) + int(head.val), max_sum)
+            max_sum = max(next_mid.val + head.val, max_sum)
             next_mid = next_mid.next
             head = head.next
         return max_sum
